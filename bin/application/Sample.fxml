@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="564.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2D2D2D;">
+         <children>
+            <Label layoutX="73.0" layoutY="14.0" prefHeight="39.0" prefWidth="96.0" text="TypR" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="38.0" />
+               </font>
+               <effect>
+                  <Glow level="0.8" />
+               </effect>
+            </Label>
+            <Label fx:id="user1" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="211.0" prefHeight="39.0" prefWidth="291.0" text="Hi ,User:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semilight" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttstart" layoutX="308.0" layoutY="282.0" mnemonicParsing="false" onAction="#playGame" prefHeight="39.0" prefWidth="81.0" style="-fx-background-color: #0ed145; -fx-background-radius: 10;" text="Start">
+               <font>
+                  <Font name="Leelawadee UI" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttbout" alignment="CENTER" contentDisplay="CENTER" layoutX="594.0" layoutY="520.0" mnemonicParsing="false" onAction="#about" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: 0; -fx-background-radius: 10;" text="About" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logo/computer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
