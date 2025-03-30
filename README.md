@@ -1,4 +1,4 @@
-#**Typing tutorial software built using JavaFX Scene Builder**
+**#Typing tutorial software built using JavaFX Scene Builder**
 <div style="display: flex; flex-wrap: wrap; gap:15px;">
     <img src="https://github.com/user-attachments/assets/1e0ebdc8-3651-4ceb-b908-44e001ea27be" style="width: 350px; object-fit: cover;">
     <img src="https://github.com/user-attachments/assets/1601ecdf-ffc3-47f5-962d-5050c7e155c7" style="width: 350px; object-fit: cover;">
